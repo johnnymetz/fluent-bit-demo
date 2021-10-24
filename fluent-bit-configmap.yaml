@@ -44,10 +44,6 @@ data:
         K8S-Logging.Exclude Off
   output.conf: |
     [OUTPUT]
-        Name stdout
-        Match *
-        Format json_lines
-    [OUTPUT]
         Name file
         Match *
         Path /logs

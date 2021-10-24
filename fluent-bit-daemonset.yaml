@@ -46,7 +46,7 @@ spec:
             name: fluent-bit-config
         - name: logs-output
           hostPath:
-            path: /Users/jonathan.metz/repos/personal/code-demos/fluentd-demos/fluent-bit-k8s/logs
+            path: <PATH TO LOGS FOLDER>
       serviceAccountName: fluent-bit
       tolerations:
         - key: node-role.kubernetes.io/master

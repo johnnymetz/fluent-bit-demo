@@ -13,6 +13,8 @@ kubectl apply -f ./counter.yaml
 kubectl logs pod/counter
 ```
 
+Next, replace the host path in `fluent-bit-daemonset.yaml` with the absolute path to the `logs/` in this repo, e.g. /path/to/logs
+
 Create fluent bit daemonset:
 
 ```
@@ -25,6 +27,8 @@ kubectl apply -f https://raw.githubusercontent.com/fluent/fluent-bit-kubernetes-
 kubectl apply -f fluent-bit-configmap.yaml
 kubectl apply -f fluent-bit-daemonset.yaml
 ```
+
+Notice the `logs/` folder is populated with several files, including one for the `counter` pod.
 
 ## Development
 
